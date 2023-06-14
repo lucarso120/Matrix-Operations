@@ -3,9 +3,18 @@ This is a C++ class for working with matrices. It provides basic operations such
 
 ## Getting Started
 To use the Matriz class, simply include the matriz.h header file in your C++ code:
+'''
+include "matriz.h"
+'''
 
 Then, create a Matriz object and perform operations on it:
+'''
+MyMatrix::Matriz m1(3, {1, 2, 3, 4, 5, 6, 7, 8, 9});
+MyMatrix::Matriz m2(3, {9, 8, 7, 6, 5, 4, 3, 2, 1});
 
+MyMatrix::Matriz m3 = m1 + m2;
+std::cout << m3.printMatrix() << std::endl;
+'''
 ## Features
 -Basic Operations
 -Matrix addition: m1 + m2
