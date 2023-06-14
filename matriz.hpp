@@ -6,25 +6,41 @@
 #include <sstream>
 #include <string>
 
-using namespace std;
+namespace MyMatrix {
 
-class Matriz{
+    class Matriz {
 
     protected:
-        vector<double> vetor;
-        vector<vector<double>> matrix;
+        std::vector<double> vetor;
+        std::vector<std::vector<double>> matrix;
         int dim;
         double traco;
 
     public:
         Matriz();
-        Matriz(int nDim, vector<double> nVetor);
+        Matriz(const int& nDim, const std::vector<double>& nVetor);
+        ~Matriz();
 
-        void InsertNewMatrix(int nDim);
-        double getTrace();
-        string printMatrix();
+        void InsertNewMatrix(const int& nDim);
+        double getTrace() const;
+        std::string printMatrix() const;
+        Matriz operator+(const Matriz& other) const;
+        Matriz operator-(const Matriz& other) const;
+        Matriz operator*(const Matriz& other) const;
+        Matriz transpose() const;
+        Matriz inverse() const;
+        double determinant() const;
+        int rank() const;
+        double norm() const;
+        Matriz power(const int& n) const;
+        std::pair<std::vector<double>, Matriz> eigen() const;
 
+    private:
+        void checkDimensions(const Matriz& other) const;
+        double cofactor(const int& row, const int& col) const;
+        double minor(const int& row, const int& col) const;
+    };
 
-};
+}
 
 #endif
