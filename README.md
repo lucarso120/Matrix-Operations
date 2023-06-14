@@ -1,12 +1,12 @@
-##Matrix Class
+## Matrix Class
 This is a C++ class for working with matrices. It provides basic operations such as matrix addition, subtraction, multiplication, and transposition, as well as more advanced features such as matrix inversion, determinant, rank, norm, power, and eigenvalues/eigenvectors.
 
-##Getting Started
+## Getting Started
 To use the Matriz class, simply include the matriz.h header file in your C++ code:
 
 Then, create a Matriz object and perform operations on it:
 
-Features
+## Features
 -Basic Operations
 -Matrix addition: m1 + m2
 -Matrix subtraction: m1 - m2
