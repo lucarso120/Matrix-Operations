@@ -14,14 +14,14 @@ std::cout << m3.printMatrix() << std::endl;
 
 ## Features
 - Basic Operations
-- Matrix addition: m1 + m2
-- Matrix subtraction: m1 - m2
-- Matrix multiplication: m1 * m2
-- Matrix transposition: m1.transpose()
+  - Matrix addition: m1 + m2
+  - Matrix subtraction: m1 - m2
+  - Matrix multiplication: m1 * m2
+  - Matrix transposition: m1.transpose()
 - Advanced Operations
-- Matrix inversion: m1.inverse()
-- Matrix determinant: m1.determinant()
-- Matrix rank: m1.rank()
-- Matrix norm: m1.norm()
-- Matrix power: m1.power(n)
-- Matrix eigenvalues and eigenvectors: m1.eigen()
+  - Matrix inversion: m1.inverse()
+  - Matrix determinant: m1.determinant()
+  - Matrix rank: m1.rank()
+  - Matrix norm: m1.norm()
+  - Matrix power: m1.power(n)
+  - Matrix eigenvalues and eigenvectors: m1.eigen()
